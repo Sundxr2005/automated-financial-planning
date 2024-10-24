@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackR</title>
+    
+    <!-- Internal CSS for Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000; /* Change this as needed for background color */
+            color: azure;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin: 15px 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border 0.3s ease;
+        }
+
+        .nav-list a:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #fff; /* Border color on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .nav-list a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TrackR</h1>
+        </header>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="pages/home.html">Home</a></li>
+                <li><a href="pages/login.html">Login</a></li>
+                <li><a href="pages/expense.html">Expenses</a></li>
+                <li><a href="pages/goal.html">Goals</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
